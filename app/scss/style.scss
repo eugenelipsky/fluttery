@@ -32,6 +32,19 @@
   }
 }
 
+.menu__list-mobile {
+  display: none;
+  width: 30px;
+
+  div {
+    height: 3px;
+    border-radius: 3px;
+    background-color: $main-text;
+    margin-bottom: 7px;
+    transition: all .3s;
+  }
+}
+
 .header__content {
   margin-top: 130px;
   padding-bottom: 179px;
@@ -80,6 +93,12 @@
     background-color: #FF7F57;
     border-radius: 3px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.header__content-img {
+  img {
+    max-width: 569px;
   }
 }
 
@@ -142,6 +161,7 @@
   max-width: 775px;
   margin: 0 auto;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .numbers__item-top {
@@ -384,7 +404,8 @@
     border-radius: 3px;
     border: none;
     color: #fff;
-    width: 371px;
+    max-width: 371px;
+    width: 100%;
     padding: 17px 0;
     text-align: center;
     font-weight: 600;
